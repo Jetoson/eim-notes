@@ -10,7 +10,18 @@ Path:
 C:\Users\Jemal\AppData\Local\Android\Sdk\platform-tools
 ```
 Commands:
-
+```Powershell
+.\adb.exe devices
+```
+```Powershell
+./adb -s <device-name> shell 
+```
+```Powershell
+ su
+```
+```Powershell
+ifconfig rndis0
+```
 Logcat:
 > package:mine tag:activitylifecycle
 > tag-ul sa gaseste in fisierul Constants in forma:

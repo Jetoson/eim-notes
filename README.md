@@ -1,55 +1,53 @@
 # EIM Notes
 
+## Version Control
 ### Github Setup
 1. New Repository.
-2. Name: YOUR-PROJECT-NAME
+2. Name: `YOUR-PROJECT-NAME`
 3. Public/Private: Public.
 4. Initialize this repository with:
-  - Check Add a README file.
-  - Add .gitignore: Select Android from the dropdown.
-  - Choose a license: Select MIT License.
-5. Click "Create repository".
-6. Edit README: With SEID Jemal Ahmed, 341C2
-7. Clone: Click the green Code button -> Copy URL.
+  - Check Add a `README` file.
+  - Add `.gitignore`: Select Android from the dropdown.
+  - Choose a license: Select `MIT License`.
+5. Click `Create repository`.
+6. Edit README: With `SEID Jemal Ahmed, 341C2`
+7. Clone: Click the green `Code` button -> `Copy URL`.
     - Open Terminal/Command Prompt.
-    - Run: git clone <PASTE_URL>
+    - Run: git clone `PASTE_URL`
+
 ### Android Studio Creation
-1. Open Android Studio -> New Project.
-2. Select Template: Choose Empty Views Activity.
+1. Open Android Studio -> `New Project`.
+2. Select Template: Choose `Empty Views Activity`.
 3. Configure Project:
-  - Name: YOUR-PROJECT-NAME
-  - Package name: ro.pub.cs.systems.eim.YOUR-PROJECT-NAME
-  - Save location: Point this to the folder you just cloned.
-     - Note: If Android Studio complains the folder is not empty (because of README/.git),
-       create the project in a new temporary folder (e.g., PracticalTest02_Project) and
-       move the files later.
-  - Language: Kotlin
-  - Minimum SDK: API 16: Android 4.1 (Jelly Bean).
+  - Name: `YOUR-PROJECT-NAME`
+  - Package name: `ro.pub.cs.systems.eim.YOUR-PROJECT-NAME`
+  - Save location: Point this to a `TEMP` folder.
+  - Language: `Kotlin`
+  - Minimum SDK: `API 16: Android 4.1 (Jelly Bean)`.
      - If your Android Studio hides API 16, select the lowest available (e.g., API 24).
         You can lower it in build.gradle later, but usually, the wizard limitation is accepted.
-  - Click Finish.
+  - Click `Finish`.
 ### Naming
 1. Activity
-  - Right-click on MainActivity.kt in the project view.
-  - Select Refactor -> Rename.
-  - Change name to: YOUR-PROJECT-NAMEMainActivity.
-  - Check all boxes (Search in comments/strings) so it updates the Manifest automatically.
-  - Click Refactor.
+  - Right-click on `MainActivity.kt` in the project view.
+  - Select `Refactor` -> `Rename`.
+  - Change name to: `YOUR-PROJECT-NAMEMainActivity`.
+  - Check all boxes (Search in comments/strings) so it updates the `Manifest` automatically.
+  - Click `Refactor`.
 2. Layout:
-  - Check res/layout
-  - Right-click activity_main.xml -> Refactor -> Rename -> Enter activity_YOUR-PROJECT-NAME_main
+  - Check `res/layout`
+  - Right-click `activity_main.xml` -> `Refactor` -> `Rename` -> Enter `activity_YOUR-PROJECT-NAME_main`
 
 ### Merging Project into Repo
-If you had to create the project in a temporary folder (because of the "Folder not empty" error in Phase 2):
 1. Open your file explorer.
-2. Copy all files from inside the temporary folder.
-3. Paste them into your cloned PracticalTest02 git repository folder.
-4. Open the YOUR-PROJECT-NAME folder in Android Studio now to verify it works.
+2. Copy all files from inside the `Temp` folder.
+3. Paste them into your cloned `YOUR-PROJECT-NAME` git repository folder.
+4. Open the git folder in Android Studio now to verify it works.
 5. Commit:
   - Open Terminal in Android Studio.
-  - git add .
-  - git commit -m "Initial project setup"
-  - git push
+  - `git add .`
+  - `git commit -m "Initial project setup"`
+  - `git push`
 
 
 

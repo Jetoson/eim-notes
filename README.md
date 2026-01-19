@@ -21,7 +21,7 @@
 3. Configure Project:
   - Name: `YOUR-PROJECT-NAME`
   - Package name: `ro.pub.cs.systems.eim.YOUR-PROJECT-NAME`
-  - Save location: Point this to a `TEMP` folder.
+  - Save location: Point this to a `Temp` folder.
   - Language: `Kotlin`
   - Minimum SDK: `API 16: Android 4.1 (Jelly Bean)`.
      - If your Android Studio hides API 16, select the lowest available (e.g., API 24).

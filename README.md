@@ -2,7 +2,7 @@
 
 ### Github Setup
 1. New Repository.
-2. Name: "<Name>"
+2. Name: <NAME>
 3. Public/Private: Public.
 4. Initialize this repository with:
   - Check Add a README file.

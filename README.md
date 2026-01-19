@@ -4,7 +4,7 @@
 ### Github Setup
 1. New Repository.
 2. Name: `YOUR-PROJECT-NAME`
-3. Public/Private: Public.
+3. Public/Private: `Public`.
 4. Initialize this repository with:
   - Check Add a `README` file.
   - Add `.gitignore`: Select Android from the dropdown.

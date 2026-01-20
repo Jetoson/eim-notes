@@ -12,32 +12,33 @@
 6. Click `Create repository`.
 7. Edit README: With `SEID Jemal Ahmed, 341C2`
 8. Clone: Click the green `Code` button -> `Copy URL`.
-        - Open Terminal/Command Prompt.
-        - Run: git clone `PASTE_URL`
+- Open Terminal/Command Prompt.
+- Run: git clone `PASTE_URL`
 
 ### Android Studio Creation
 1. Open Android Studio -> `New Project`.
 2. Select Template: Choose `Empty Views Activity`.
 3. Configure Project:
-        - Name: `YOUR-PROJECT-NAME`
-        - Package name: `ro.pub.cs.systems.eim.YOUR-PROJECT-NAME`
-        - Save location: Point this to a `Temp` folder.
-        - Language: `Kotlin`
-        - Minimum SDK: `API 16: Android 4.1 (Jelly Bean)`.
-                - If your Android Studio hides API 16, select the lowest available (e.g., API 24).
-                        You can lower it in build.gradle later, but usually, the wizard limitation is accepted.
-        - Click `Finish`.
+- Name: `YOUR-PROJECT-NAME`
+- Package name: `ro.pub.cs.systems.eim.YOUR-PROJECT-NAME`
+- Save location: Point this to a `Temp` folder.
+- Language: `Kotlin`
+- Minimum SDK: `API 16: Android 4.1 (Jelly Bean)`.
+- If your Android Studio hides API 16, select the lowest available (e.g., API 24).
+- You can lower it in build.gradle later, but usually, the wizard limitation is accepted.
+- Click `Finish`.
 
 ### Naming
 1. Activity
-        - Right-click on `MainActivity.kt` in the project view.
-        - Select `Refactor` -> `Rename`.
-        - Change name to: `YOUR-PROJECT-NAMEMainActivity`.
-        - Check all boxes (Search in comments/strings) so it updates the `Manifest` automatically.
-        - Click `Refactor`.
-2. Layout:
-        - Check `res/layout`
-        - Right-click `activity_main.xml` -> `Refactor` -> `Rename` -> Enter `activity_YOUR-PROJECT-NAME_main`
+- Right-click on `MainActivity.kt` in the project view.
+- Select `Refactor` -> `Rename`.
+- Change name to: `YOUR-PROJECT-NAMEMainActivity`.
+- Check all boxes (Search in comments/strings) so it updates the `Manifest` automatically.
+- Click `Refactor`.
+
+3. Layout:
+- Check `res/layout`
+- Right-click `activity_main.xml` -> `Refactor` -> `Rename` -> Enter `activity_YOUR-PROJECT-NAME_main`
 
 ### Merging Project into Repo
 1. Open your file explorer.
@@ -45,21 +46,21 @@
 3. Paste them into your cloned `YOUR-PROJECT-NAME` git repository folder.
 4. Open the git folder in Android Studio now to verify it works.
 5. Commit:
-        - Open Terminal in Android Studio.
-        - `git add .`
-        - `git commit -m "Initial project setup"`
-        - `git push`
+- Open Terminal in Android Studio.
+- `git add .`
+- `git commit -m "Initial project setup"`
+- `git push`
 
 ## Google API
 ### Configuring OAuth Client ID
 1. Go to [here](https://console.developers.google.com/)
 2. Select `OAuth consent screen` from the left menu bar
 3. Go to `Clients` and then `Create a client`:
-        - Application Type: Android
-        - Name: EIM-Test
-        - Package name: ro.pub.cs.systems.eim.PROJECT-NAME
-        - SHA-1 certificate fingerprint:
-        - Run the command below from the Android Studio Terminal
+- Application Type: Android
+- Name: EIM-Test
+- Package name: ro.pub.cs.systems.eim.PROJECT-NAME
+- SHA-1 certificate fingerprint:
+- Run the command below from the Android Studio Terminal
 ```Powershell
 & "C:\Program Files\Android\Android Studio1\jbr\bin\keytool.exe" -list -v -keystore "$env:USERPROFILE\.android\debug.keystore" -alias androiddebugkey -storepass android -keypass android
 ```

@@ -5,13 +5,13 @@
 1. New Repository.
 2. Name: `YOUR-PROJECT-NAME`
 3. Public/Private: `Public`.
-4. Initialize this repository with:
-        - Check Add a `README` file.
-        - Add `.gitignore`: Select Android from the dropdown.
-        - Choose a license: Select `MIT License`.
-5. Click `Create repository`.
-6. Edit README: With `SEID Jemal Ahmed, 341C2`
-7. Clone: Click the green `Code` button -> `Copy URL`.
+4. Initialize this repository with
+- Check Add a `README` file.
+- Add `.gitignore`: Select Android from the dropdown.
+- Choose a license: Select `MIT License`.
+6. Click `Create repository`.
+7. Edit README: With `SEID Jemal Ahmed, 341C2`
+8. Clone: Click the green `Code` button -> `Copy URL`.
         - Open Terminal/Command Prompt.
         - Run: git clone `PASTE_URL`
 

@@ -54,7 +54,7 @@
 ### Configuring OAuth Client ID
 1. Go to [here](https://console.developers.google.com/)
 2. Select `OAuth consent screen` from the left menu bar
-3. Click `Create OAuth client`:
+3. Go to `Clients` and then `Create a client`:
         - Application Type: Android
         - Name: EIM-Test
         - Package name: ro.pub.cs.systems.eim.PROJECT-NAME

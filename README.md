@@ -6,37 +6,38 @@
 2. Name: `YOUR-PROJECT-NAME`
 3. Public/Private: `Public`.
 4. Initialize this repository with:
-&nbsp;&nbsp;&nbsp;&nbsp; - Check Add a `README` file.
-&nbsp;&nbsp;&nbsp;&nbsp; - Add `.gitignore`: Select Android from the dropdown.
-&nbsp;&nbsp;&nbsp;&nbsp; - Choose a license: Select `MIT License`.
+        - Check Add a `README` file.
+        - Add `.gitignore`: Select Android from the dropdown.
+        - Choose a license: Select `MIT License`.
 5. Click `Create repository`.
 6. Edit README: With `SEID Jemal Ahmed, 341C2`
 7. Clone: Click the green `Code` button -> `Copy URL`.
-&nbsp;&nbsp;&nbsp;&nbsp; - Open Terminal/Command Prompt.
-&nbsp;&nbsp;&nbsp;&nbsp; - Run: git clone `PASTE_URL`
+        - Open Terminal/Command Prompt.
+        - Run: git clone `PASTE_URL`
 
 ### Android Studio Creation
 1. Open Android Studio -> `New Project`.
 2. Select Template: Choose `Empty Views Activity`.
 3. Configure Project:
-&nbsp;&nbsp;&nbsp;&nbsp; - Name: `YOUR-PROJECT-NAME`
-&nbsp;&nbsp;&nbsp;&nbsp; - Package name: `ro.pub.cs.systems.eim.YOUR-PROJECT-NAME`
-&nbsp;&nbsp;&nbsp;&nbsp; - Save location: Point this to a `Temp` folder.
-&nbsp;&nbsp;&nbsp;&nbsp; - Language: `Kotlin`
-&nbsp;&nbsp;&nbsp;&nbsp; - Minimum SDK: `API 16: Android 4.1 (Jelly Bean)`.
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - If your Android Studio hides API 16, select the lowest available (e.g., API 24).
-        You can lower it in build.gradle later, but usually, the wizard limitation is accepted.
-&nbsp;&nbsp;&nbsp;&nbsp; - Click `Finish`.
+        - Name: `YOUR-PROJECT-NAME`
+        - Package name: `ro.pub.cs.systems.eim.YOUR-PROJECT-NAME`
+        - Save location: Point this to a `Temp` folder.
+        - Language: `Kotlin`
+        - Minimum SDK: `API 16: Android 4.1 (Jelly Bean)`.
+                - If your Android Studio hides API 16, select the lowest available (e.g., API 24).
+                        You can lower it in build.gradle later, but usually, the wizard limitation is accepted.
+        - Click `Finish`.
+
 ### Naming
 1. Activity
-&nbsp;&nbsp;&nbsp;&nbsp; - Right-click on `MainActivity.kt` in the project view.
-&nbsp;&nbsp;&nbsp;&nbsp; - Select `Refactor` -> `Rename`.
-&nbsp;&nbsp;&nbsp;&nbsp; - Change name to: `YOUR-PROJECT-NAMEMainActivity`.
-&nbsp;&nbsp;&nbsp;&nbsp; - Check all boxes (Search in comments/strings) so it updates the `Manifest` automatically.
-&nbsp;&nbsp;&nbsp;&nbsp; - Click `Refactor`.
+        - Right-click on `MainActivity.kt` in the project view.
+        - Select `Refactor` -> `Rename`.
+        - Change name to: `YOUR-PROJECT-NAMEMainActivity`.
+        - Check all boxes (Search in comments/strings) so it updates the `Manifest` automatically.
+        - Click `Refactor`.
 2. Layout:
-&nbsp;&nbsp;&nbsp;&nbsp; - Check `res/layout`
-&nbsp;&nbsp;&nbsp;&nbsp; - Right-click `activity_main.xml` -> `Refactor` -> `Rename` -> Enter `activity_YOUR-PROJECT-NAME_main`
+        - Check `res/layout`
+        - Right-click `activity_main.xml` -> `Refactor` -> `Rename` -> Enter `activity_YOUR-PROJECT-NAME_main`
 
 ### Merging Project into Repo
 1. Open your file explorer.
@@ -44,26 +45,29 @@
 3. Paste them into your cloned `YOUR-PROJECT-NAME` git repository folder.
 4. Open the git folder in Android Studio now to verify it works.
 5. Commit:
-&nbsp;&nbsp;&nbsp;&nbsp; - Open Terminal in Android Studio.
-&nbsp;&nbsp;&nbsp;&nbsp; - `git add .`
-&nbsp;&nbsp;&nbsp;&nbsp; - `git commit -m "Initial project setup"`
-&nbsp;&nbsp;&nbsp;&nbsp; - `git push`
+        - Open Terminal in Android Studio.
+        - `git add .`
+        - `git commit -m "Initial project setup"`
+        - `git push`
 
 ## Google API
 ### Configuring OAuth Client ID
 1. Go to [here](https://console.developers.google.com/)
 2. Select `OAuth consent screen` from the left menu bar
 3. Click `Create OAuth client`:
-&nbsp;&nbsp;&nbsp;&nbsp; - Application Type: Android
-&nbsp;&nbsp;&nbsp;&nbsp; - Name: EIM-Test
-&nbsp;&nbsp;&nbsp;&nbsp; - Package name: ro.pub.cs.systems.eim.PROJECT-NAME
-&nbsp;&nbsp;&nbsp;&nbsp; - SHA-1 certificate fingerprint:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Run the command below
+        - Application Type: Android
+        - Name: EIM-Test
+        - Package name: ro.pub.cs.systems.eim.PROJECT-NAME
+        - SHA-1 certificate fingerprint:
+        - Run the command below from the Android Studio Terminal
 ```Powershell
 & "C:\Program Files\Android\Android Studio1\jbr\bin\keytool.exe" -list -v -keystore "$env:USERPROFILE\.android\debug.keystore" -alias androiddebugkey -storepass android -keypass android
 ```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Copy the line that starts with SHA1: followed by a long string of hex pairs (like AA:BB:CC...)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Paste it to the google console
+- Copy the line that starts with SHA1: followed by a long string of hex pairs (like AA:BB:CC...)
+```bash
+ 22:A8:89:0A:B5:C3:CE:BA:CC:4B:59:33:2C:F9:F5:E2:B9:FD:4B:FE
+```
+- Paste it to the google console
  
 ## Comunicația prin Sockeți în Android
 

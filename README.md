@@ -69,7 +69,17 @@
  22:A8:89:0A:B5:C3:CE:BA:CC:4B:59:33:2C:F9:F5:E2:B9:FD:4B:FE
 ```
 - Paste it to the google console
- 
+
+## Android Packets
+1. Restart adb as a root
+```Powershell
+& "C:\Users\Jemal\AppData\Local\Android\Sdk\platform-tools\adb.exe" root
+```
+2. Then run
+```Powershell
+& "C:\Users\Jemal\AppData\Local\Android\Sdk\platform-tools\adb.exe" shell "/data/local/tmp/tcpdump -i any -U -w - 2>/dev/null" | & "C:\Program Files\Wireshark\Wireshark.exe" -k -i - 
+```
+3. 
 ## Comunicația prin Sockeți în Android
 
 ### Pentru USB tethering, pe telefon, se conecteaza telefonul cu calculato prin USB si apoi se accesează:

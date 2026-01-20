@@ -95,7 +95,7 @@
 ```Powershell
 & "C:\Users\Jemal\AppData\Local\Android\Sdk\platform-tools\adb.exe" shell "/data/local/tmp/tcpdump -i any -U -w - 2>/dev/null" | & "C:\Program Files\Wireshark\Wireshark.exe" -k -i - 
 ```
-7. 
+7. Filter `mdns`
 
 ## Comunicația prin Sockeți în Android
 

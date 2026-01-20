@@ -71,15 +71,32 @@
 - Paste it to the google console
 
 ## Android Packets
-1. Restart adb as a root
+1. Start adb as a root
 ```Powershell
 & "C:\Users\Jemal\AppData\Local\Android\Sdk\platform-tools\adb.exe" root
 ```
 2. Then run
 ```Powershell
+& "C:\Users\Jemal\AppData\Local\Android\Sdk\platform-tools\adb.exe" push C:\Users\Jemal\tcpdump /data/local/tmp/
+```
+3. Then run
+```Powershell
+& "C:\Users\Jemal\AppData\Local\Android\Sdk\platform-tools\adb.exe" shell chmod 755 /data/local/tmp/tcpdump
+```
+4. Then run
+```Powershell
+& "C:\Users\Jemal\AppData\Local\Android\Sdk\platform-tools\adb.exe" shell /data/local/tmp/tcpdump --version
+```
+5. Then retart adb as a root
+```Powershell
+& "C:\Users\Jemal\AppData\Local\Android\Sdk\platform-tools\adb.exe" root
+```
+6. Then run
+```Powershell
 & "C:\Users\Jemal\AppData\Local\Android\Sdk\platform-tools\adb.exe" shell "/data/local/tmp/tcpdump -i any -U -w - 2>/dev/null" | & "C:\Program Files\Wireshark\Wireshark.exe" -k -i - 
 ```
-3. 
+7. 
+
 ## Comunicația prin Sockeți în Android
 
 ### Pentru USB tethering, pe telefon, se conecteaza telefonul cu calculato prin USB si apoi se accesează:
